@@ -28,8 +28,8 @@ bool Password::has_mixed_case(string pass){
   bool upper = 0;
   bool lower = 0;
   for (int i =0; i<pass.size(); i++) {
-	if (islower(pass[i])) { lower = 1 }
-	else if (isupper(pass[i])) { upper = 1 };
+	if (islower(pass[i])) { lower = 1; }
+	else if (isupper(pass[i])) { upper = 1; }
   }
   return upper && lower;
 }
